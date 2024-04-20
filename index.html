@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  </head>
+  <body>
+    
+    <nav>
+      <div class="main_nav flex">
+        <a href="#" onclick="reload()">
+          <img class="logo" src="./assets/logo.jpg" alt="" width="90px" height="50px" />
+        </a>
+        <div class="nav_links">
+          <ul class="flex">
+            <li class="hover_link nav_item" id="ipl" onclick="onNavItemClick('ipl')">IPL</li>
+            <li class="hover_link nav_item" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+            <li class="hover_link nav_item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+          </ul>
+        </div>
+        <div class="search_bar flex">
+          <input id="search-text" type="text" class="news_input" placeholder="e.g. Science" />
+          <button id="search_button" class="search_button">Search</button>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="cards_container container flex" id="cards_container">
+
+      </div>
+    </main>
+    <template id="template_news_card">
+      <div class="card">
+        <div class="card_header">
+          <img
+            src=""
+            alt="Random image"
+            id="news_img"
+            width="300px"
+            height="200px"
+          />
+        </div>
+        <div class="card_content">
+          <h3 id="news_title">This is title</h3>
+          <h6 class="news-src" id="news_source">End Gadget</h6>
+          <p class="news_desc" id="news_desc">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi,
+            dicta voluptatem accusantium pariatur accusamus nostrum eligendi
+            maiores asperiores quaerat tenetur voluptate odit quas molestias
+            libero necessitatibus perferendis ipsam alias nobis!
+          </p>
+        </div>
+      </div>
+    </template>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>About Us</h3>
+          <p>We are a team of passionate developers who love building web applications.</p>
+        </div>
+        <div class="footer-column">
+          <h3>Contact Us</h3>
+          <ul>
+            <li><a href="mailto:info@example.com">Email: ishansingh3091@gmail.com</a></li>
+            <li><a href="tel:+1234567890">Phone: +1 (234) 567-890</a></li>
+            <li><a href="https://www.example.com/contact">Website: www.example.com/contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Follow Us</h3>
+          <ul>
+            <li><a href="https://www.facebook.com/yourpage" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://twitter.com/yourpage" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/yourpage" target="_blank"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- <div class="social-media">
+      <a href="https://www.facebook.com/yourpage" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://twitter.com/yourpage" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com/yourpage" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/company/yourpage" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    </div> -->
+    
+    
+    <script src="script.js"></script>
+  </body>
+</html>
